@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Profile</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h2>User Profile</h2>
+    <form id="profileForm">
+      <div class="form-group">
+        <label for="profileName">Name:</label>
+        <input type="text" id="profileName" readonly>
+      </div>
+      <div class="form-group">
+        <label for="profileUsername">Username:</label>
+        <input type="text" id="profileUsername" readonly>
+      </div>
+      <div class="form-group">
+        <label for="profileEmail">Email:</label>
+        <input type="email" id="profileEmail" readonly>
+      </div>
+      <div class="form-group">
+        <label for="profileGrade">Grade/Year:</label>
+        <input type="text" id="profileGrade" readonly>
+      </div>
+      <div class="form-group">
+        <label for="profileCountry">Country:</label>
+        <input type="text" id="profileCountry" readonly>
+      </div>
+      <div class="form-group">
+        <label for="profileCity">City:</label>
+        <input type="text" id="profileCity" readonly>
+      </div>
+      <div class="form-group">
+        <label for="profileReason">Reason for Download:</label>
+        <input type="text" id="profileReason" readonly>
+      </div>
+    </form>
+
+    <div class="profile-extras">
+      <h3>Friends</h3>
+      <div class="friends-list" id="friendsList"></div>
+      <input type="text" id="friendUsername" placeholder="Enter friend's username">
+      <button id="addFriendButton" class="btn">Add Friend</button>
+
+      <h3>Points</h3>
+      <div id="pointsDisplay">0</div>
+
+      <h3>Coming Soon</h3>
+      <div class="coming-soon">
+        More exciting features coming soon!
+      </div>
+
+      <button id="signOutButton" class="btn">Sign Out</button>
+    </div>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

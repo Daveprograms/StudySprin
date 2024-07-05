@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task and Project Management</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Task and Project Management</h2>
+    
+    <div class="task-project-form">
+      <h3>Create Task/Project</h3>
+      <form id="taskProjectForm">
+        <div class="form-group">
+          <label for="taskProjectTitle">Title:</label>
+          <input type="text" id="taskProjectTitle" required>
+        </div>
+        <div class="form-group">
+          <label for="taskProjectSubject">Subject:</label>
+          <select id="taskProjectSubject" required>
+            <option value="math">Math</option>
+            <option value="science">Science</option>
+            <option value="history">History</option>
+            <option value="english">English</option>
+            <!-- Add more subjects as needed -->
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="taskProjectDescription">Describe what you need help with:</label>
+          <textarea id="taskProjectDescription" required></textarea>
+        </div>
+        <div class="form-group">
+          <label for="taskProjectPriority">Priority:</label>
+          <select id="taskProjectPriority" required>
+            <option value="homework">Homework</option>
+            <option value="practice">Practice</option>
+            <option value="test">Test</option>
+            <option value="exam">Exam</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="taskProjectGradeGoal">Grade Goal:</label>
+          <input type="number" id="taskProjectGradeGoal" min="0" max="100" required>
+        </div>
+        <div class="form-group">
+          <label for="taskProjectDeadline">Deadline:</label>
+          <input type="date" id="taskProjectDeadline" required>
+        </div>
+        <div class="form-actions">
+          <button type="submit" class="btn">Create</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="task-project-list">
+      <h3>Tasks and Projects</h3>
+      <div id="taskProjectContainer"></div>
+    </div>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
