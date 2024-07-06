@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Study Flashcards</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Interactive Study Flashcards</h2>
+    
+    <div class="flashcard-form">
+      <h3>Create Flashcard</h3>
+      <form id="flashcardForm">
+        <div class="form-group">
+          <label for="flashcardQuestion">Question:</label>
+          <textarea id="flashcardQuestion" required></textarea>
+        </div>
+        <div class="form-group">
+          <label for="flashcardAnswer">Answer:</label>
+          <textarea id="flashcardAnswer" required></textarea>
+        </div>
+        <div class="form-group">
+          <label for="flashcardCategory">Category/Subject:</label>
+          <select id="flashcardCategory" required>
+            <option value="math">Math</option>
+            <option value="science">Science</option>
+            <option value="history">History</option>
+            <option value="english">English</option>
+            <!-- Add more categories/subjects as needed -->
+          </select>
+        </div>
+        <div class="form-actions">
+          <button type="submit" class="btn">Create</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="flashcard-list">
+      <h3>Flashcards</h3>
+      <div id="flashcardContainer"></div>
+    </div>
+
+    <div class="flashcard-review">
+      <h3>Review Flashcards</h3>
+      <button id="startReview" class="btn">Start Review</button>
+      <div id="reviewContainer" style="display:none;">
+        <div id="reviewQuestion"></div>
+        <button id="showAnswer" class="btn">Show Answer</button>
+        <div id="reviewAnswer" style="display:none;"></div>
+        <button id="nextFlashcard" class="btn">Next</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+/* Common Styles */
+body {
+          font-family: Arial, sans-serif;
+          background-color: #f4f4f4;
+          margin: 0;
+          padding: 0;
+        }
+        
+        .container {
+          max-width: 1200px;
+          margin: 0 auto;
+          padding: 20px;
+        }
+        
+        h2, h3 {
+          color: #333;
+        }
+        
+        /* Form Styles */
+        .flashcard-form, .flashcard-list, .flashcard-review {
+          background-color: #fff;
+          padding: 20px;
+          border-radius: 8px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          margin-bottom: 20px;
+        }
+        
+        .form-group {
+          margin-bottom: 15px;
+        }
+        
+        label {
+          display: block;
+          font-weight: bold;
+          margin-bottom: 5px;
+        }
+        
+        textarea, select {
+          width: 100%;
+          padding: 10px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          box-sizing: border-box;
+        }
+        
+        textarea {
+          resize: vertical;
+          height: 100px;
+        }
+        
+        .form-actions {
+          text-align: right;
+        }
+        
+        .btn {
+          background-color: #007bff;
+          color: #fff;
+          border: none;
+          border-radius: 4px;
+          padding: 10px 20px;
+          cursor: pointer;
+        }
+        
+        .btn:hover {
+          background-color: #0056b3;
+        }
+        
+        /* Flashcard List Styles */
+        .flashcard-item {
+          border-bottom: 1px solid #ccc;
+          padding: 10px 0;
+        }
+        
+        .flashcard-item h4 {
+          margin: 0 0 5px;
+        }
+        
+        .flashcard-item p {
+          margin: 5px 0;
+        }
+        
+        .flashcard-actions {
+          margin-top: 10px;
+        }
+        
+        .flashcard-actions .btn {
+          background-color: #28a745;
+          color: #ffffff;
+          border: none;
+          border-radius: 4px;
+          padding: 5px 10px;
+          cursor: pointer;
+        }
+        
+        .flashcard-actions .btn:hover {
+          background-color: #218838;
+        }
+        
+        .flashcard-actions .btn.delete {
+          background-color: #dc3545;
+        }
+        
+        .flashcard-actions .btn.delete:hover {
+          background-color: #c82333;
+        }
+        
+        /* Flashcard Review Styles */
+        #reviewContainer {
+          text-align: center;
+        }
+        
+        #reviewQuestion, #reviewAnswer {
+          font-size: 1.2em;
+          margin: 20px 0;
+        }
+        
