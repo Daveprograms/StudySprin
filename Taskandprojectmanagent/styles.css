@@ -1,69 +1,89 @@
+/* Common Styles */
 body {
           font-family: Arial, sans-serif;
-          background-color: #f5f5f5;
+          background-color: #f4f4f4;
           margin: 0;
           padding: 0;
         }
         
         .container {
-          max-width: 600px;
+          max-width: 1200px;
           margin: 0 auto;
           padding: 20px;
-          background-color: #ffffff;
-          border-radius: 8px;
-          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         
         h2, h3 {
-          text-align: center;
+          color: #333;
+        }
+        
+        /* Task and Project Form Styles */
+        .task-project-form {
+          background-color: #fff;
+          padding: 20px;
+          border-radius: 8px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          margin-bottom: 20px;
         }
         
         .form-group {
           margin-bottom: 15px;
         }
         
-        .form-group label {
+        label {
           display: block;
+          font-weight: bold;
           margin-bottom: 5px;
         }
         
-        .form-group input, .form-group textarea, .form-group select {
+        input[type="text"],
+        input[type="number"],
+        input[type="date"],
+        textarea,
+        select {
           width: 100%;
-          padding: 8px;
+          padding: 10px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
           box-sizing: border-box;
         }
         
-        .form-actions {
-          text-align: center;
+        textarea {
+          resize: vertical;
+          height: 100px;
         }
         
-        .form-actions .btn {
-          padding: 10px 20px;
+        .form-actions {
+          text-align: right;
+        }
+        
+        .btn {
           background-color: #007bff;
-          color: #ffffff;
+          color: #fff;
           border: none;
           border-radius: 4px;
+          padding: 10px 20px;
           cursor: pointer;
         }
         
-        .form-actions .btn:hover {
+        .btn:hover {
           background-color: #0056b3;
         }
         
+        /* Task and Project List Styles */
         .task-project-list {
-          margin-top: 20px;
+          background-color: #fff;
+          padding: 20px;
+          border-radius: 8px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         
         .task-project-item {
-          background-color: #f9f9f9;
-          padding: 15px;
-          margin-bottom: 10px;
-          border: 1px solid #ddd;
-          border-radius: 4px;
+          border-bottom: 1px solid #ccc;
+          padding: 10px 0;
         }
         
         .task-project-item h4 {
-          margin: 0 0 10px 0;
+          margin: 0 0 5px;
         }
         
         .task-project-item p {
@@ -71,8 +91,7 @@ body {
         }
         
         .task-project-actions {
-          display: flex;
-          justify-content: space-between;
+          margin-top: 10px;
         }
         
         .task-project-actions .btn {
