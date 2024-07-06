@@ -1,0 +1,27 @@
+/* styles.css */
+
+#analyticsSection {
+          padding: 20px;
+          background-color: #fff;
+          border: 1px solid #ddd;
+          margin: 20px;
+      }
+      
+      #analyticsSection h2 {
+          margin-bottom: 20px;
+      }
+      
+      #analyticsSection h3 {
+          margin-top: 20px;
+      }
+      
+      #analyticsSection ul {
+          list-style-type: none;
+          padding: 0;
+      }
+      
+      #analyticsSection ul li {
+          padding: 10px;
+          border-bottom: 1px solid #ddd;
+      }
+      
