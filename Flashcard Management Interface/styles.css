@@ -17,7 +17,7 @@ body {
         }
         
         /* Form Styles */
-        .flashcard-form, .flashcard-list, .flashcard-review {
+        .flashcard-form, .flashcard-list, .flashcard-review, .flashcard-ai {
           background-color: #fff;
           padding: 20px;
           border-radius: 8px;
